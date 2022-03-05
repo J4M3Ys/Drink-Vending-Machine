@@ -1,0 +1,31 @@
+version: "3.5"
+
+services:
+  mongo:
+    image: mongo:4.0.0
+    container_name: mongo-db
+    restart: always
+    tty: true
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin-secret
+    ports:
+      - 27018:27017
+    volumes:
+      - ./volumes/data:/data/db
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    restart: always
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_MONGODB_PORT: "27017"
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: admin-secret
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: admin-secret
+    ports:
+      - 8888:8081
+    depends_on:
+      - mongo
