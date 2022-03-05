@@ -12,6 +12,14 @@ API
 * Notification สำหรับสินค้าที่น้อยกว่า 10 ชิ้น ( แจ้งเตือนไปทุก Account ที่เป็น Role admin ).
 * Api สำหรับการซื้อสินค้า.
 
+```bash
+# Docker compose ( MongoDB )
+docker-compose up -d
+
+# install package and Start server
+npm i && npm start
+```
+
 CMS
 * ระบบสมัครสมาชิกสำหรับใช้ในการ Login เข้าใช้งาน CMS. ( Default role จะเป็น Admin ).
 * ระบบ Login เพื่อเข้าใช้งาน CMS.
@@ -20,10 +28,20 @@ CMS
 * สามารถดูตำแหน่งที่ตั้งของ Drink Vending Machine ในแผนที่ได้ว่าตั้งอยู่ที่ใดบ้าง โดยคลิกเลือกที่ตู้ และแผนที่จะทำการ ชี้ไปที่ Location ของตู้บนแผนที่.
 * ระบบ Notification สำหรับสินค้าใดๆ ที่มีจำนวนคงเหลือในตู้ น้อยกว่า 10 ชิ้น. ( แจ้งเตือนไปทุก Account ที่เป็น Role admin )
 
+```bash
+# install package and Start server
+yarn && yarn start
+```
+
 WEB
 * แสดง และค้นหา Drink Vending Machine ที่ต้องการใช้งาน.
 * ค้นหา และซื้อสินค้าใน Drink Vending Machine ที่เลือกใช้งาน 
 * แสดงจำนวนคงเหลือของสินค้า หากสินค้าหมดจะเป็น Sold out.
+
+```bash
+# install package and Start server
+yarn && yarn run dev
+```
 
 # Stack
 * React Js ( CMS )
