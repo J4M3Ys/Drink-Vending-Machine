@@ -4,7 +4,7 @@ This is testing project for SCG By Charakorn Purithewes. ( James )
 # Environment
 
 * Docker.
-* MongoDB Compass.
+* MongoDB Compass ( GUI สำหรับดู Database ).
 * Node Js. ( LTS version. )
 
 # Feature
