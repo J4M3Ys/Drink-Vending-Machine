@@ -15,6 +15,7 @@ npm i && npm start
 ```
 
 * Api authorization ( Token ) Login เพื่อรับ Token.
+* CRUD User.
 * CRUD Drink Vending Machine.
 * CRUD Product in Drink Vending Machine.
 * Upload image.
