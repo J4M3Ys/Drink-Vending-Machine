@@ -4,7 +4,7 @@ This is testing project for SCG By Charakorn Purithewes. ( James )
 # Feature
 > ทั้งหมดประกอบได้ด้วย 3 ส่วน ได้แก้ API, WEB, CMS ( ไม่ Support responsive )
 
-API
+<h3>API</h3>
 
 ```bash
 # Docker compose ( MongoDB )
@@ -21,7 +21,7 @@ npm i && npm start
 * Notification สำหรับสินค้าที่น้อยกว่า 10 ชิ้น ( แจ้งเตือนไปทุก Account ที่เป็น Role admin ).
 * Api สำหรับการซื้อสินค้า.
 
-CMS
+<h3>CMS</h3>
 
 ```bash
 # install package and Start server
@@ -67,10 +67,10 @@ yarn && yarn start
 </div>
 * ระบบ Notification สำหรับสินค้าใดๆ ที่มีจำนวนคงเหลือในตู้ น้อยกว่า 10 ชิ้น ( แจ้งเตือนไปทุก Account ที่เป็น Role admin ) หากทำการคลิกไปที่ Notification ระบบจะทำการนำไปที่ตู้ที่สินค้านั้นแจ้งเตือนมา. 
 <div style="display: flex;">
-  <img src="https://user-images.githubusercontent.com/101004644/156894990-084f0c1e-88d4-462b-9f47-745f8a135ddd.png" width="600px;">
+  <img src="https://user-images.githubusercontent.com/101004644/156894990-084f0c1e-88d4-462b-9f47-745f8a135ddd.png" width="400px;">
 </div>
 
-WEB
+<h3>WEB</h3>
 
 ```bash
 # install package and Start server
