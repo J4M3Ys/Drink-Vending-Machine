@@ -38,6 +38,7 @@ yarn && yarn start
   <img src="https://user-images.githubusercontent.com/101004644/156893730-f6e9241b-d196-442e-91d3-71fe659e311b.png" width="200px;">
 </div>
 
+
 * ตารางแสดง Drink Vending Machine ที่มีทั้งหมดในระบบ และเมนู สร้าง, ลบ, แก้ไข และค้นหา. 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/101004644/156894022-364c2466-a782-40b6-b9f0-6b946c88e55a.png" width="700px;">
@@ -48,6 +49,7 @@ yarn && yarn start
   <img src="https://user-images.githubusercontent.com/101004644/156894018-e2352e90-7354-4fd1-8c7a-d12c81109ba2.png" width="400px;">
   <img src="https://user-images.githubusercontent.com/101004644/156894021-b156ef1e-ac0d-49c2-b35f-f12dde67a7c4.png" width="500px;">
 </div>
+
 * ตารางแสดงสินค้าภายใน Drink Vending Machine ที่เลือกผ่านเมนู  View Product และเมนู สร้าง, ลบ, แก้ไข และค้นหา.
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/101004644/156894257-f5ae808d-15a7-477d-9838-3c98e0862ab7.png" width="700px;">
@@ -65,6 +67,7 @@ yarn && yarn start
   <img src="https://user-images.githubusercontent.com/101004644/156894795-2abb369a-d424-4aaf-99c6-d2a6748502e3.png" width="500px;">
   <img src="https://user-images.githubusercontent.com/101004644/156894796-43568e4d-1378-4a41-8805-dfd0a109f11a.png" width="500px;">
 </div>
+
 * ระบบ Notification สำหรับสินค้าใดๆ ที่มีจำนวนคงเหลือในตู้ น้อยกว่า 10 ชิ้น ( แจ้งเตือนไปทุก Account ที่เป็น Role admin ) หากทำการคลิกไปที่ Notification ระบบจะทำการนำไปที่ตู้ที่สินค้านั้นแจ้งเตือนมา. 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/101004644/156894990-084f0c1e-88d4-462b-9f47-745f8a135ddd.png" width="400px;">
@@ -86,6 +89,11 @@ yarn && yarn run dev
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/101004644/156893543-9d360997-d9a2-4b30-b64f-8d740efa6a44.png" width="500px;">
   <img src="https://user-images.githubusercontent.com/101004644/156893606-0e1acfe4-8a12-4e6b-8d74-10948c96493b.png" width="500px;">
+</div>
+
+* แสดงผลลัพธ์การซื้อสินค้า
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/101004644/156895194-e1615db4-ba22-4d67-83d0-c0cb7d36f2be.png" width="700px;">
 </div>
 
 # Stack
