@@ -54,6 +54,10 @@ yarn && yarn start
 </div>
 
 * สามารถสร้าง, ลบ, แก้ไข, ค้นหา สินค้าใน Drink Vending Machine ที่เราทำการสร้างขึ้นมา.
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/101004644/156894364-7f69b1db-58a9-41e4-8ede-464255fa911f.png" width="400px;">
+</div>
+
 * สามารถดูตำแหน่งที่ตั้งของ Drink Vending Machine ในแผนที่ได้ว่าตั้งอยู่ที่ใดบ้าง โดยคลิกเลือกที่ตู้ และแผนที่จะทำการ ชี้ไปที่ Location ของตู้บนแผนที่.
 * ระบบ Notification สำหรับสินค้าใดๆ ที่มีจำนวนคงเหลือในตู้ น้อยกว่า 10 ชิ้น. ( แจ้งเตือนไปทุก Account ที่เป็น Role admin )
 
@@ -81,7 +85,8 @@ yarn && yarn run dev
 * React Js ( CMS )
 * Next Js ( WEB )
 * Node Js + Express Js ( API )
-* MongoDB
+* MongoDB + MongoDB Compass
 * Docker
 * Antd
+
 
