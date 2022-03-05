@@ -40,12 +40,13 @@ WEB
 </div>
 * ค้นหา และซื้อสินค้าใน Drink Vending Machine ที่เลือกใช้งาน แสดงจำนวนคงเหลือของสินค้า หากสินค้าหมดจะเป็น Sold out.
 <div style="display: flex;">
-  <img src="https://user-images.githubusercontent.com/101004644/156893519-c65f3b4e-e578-40bd-b8e8-d13bee61f406.png" width="500px;">
+  <img src="https://user-images.githubusercontent.com/101004644/156893543-9d360997-d9a2-4b30-b64f-8d740efa6a44.png" width="500px;">
 </div>
 ```bash
 # install package and Start server
 yarn && yarn run dev
 ```
+
 
 # Stack
 * React Js ( CMS )
