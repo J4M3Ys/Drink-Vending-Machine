@@ -35,9 +35,13 @@ yarn && yarn start
 
 WEB
 * แสดง และค้นหา Drink Vending Machine ที่ต้องการใช้งาน.
-* ค้นหา และซื้อสินค้าใน Drink Vending Machine ที่เลือกใช้งาน 
-* แสดงจำนวนคงเหลือของสินค้า หากสินค้าหมดจะเป็น Sold out.
-
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/101004644/156893353-ff51cdee-7b52-471c-a5b3-9c559c6759a7.png" width="600px;">
+</div>
+* ค้นหา และซื้อสินค้าใน Drink Vending Machine ที่เลือกใช้งาน แสดงจำนวนคงเหลือของสินค้า หากสินค้าหมดจะเป็น Sold out.
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/101004644/156893519-c65f3b4e-e578-40bd-b8e8-d13bee61f406.png" width="500px;">
+</div>
 ```bash
 # install package and Start server
 yarn && yarn run dev
