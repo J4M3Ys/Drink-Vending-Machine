@@ -2,7 +2,7 @@
 This is testing project for SCG.
 
 # Feature
-> ทั้งหมดประกอบได้ด้วย 3 ส่วน ได้แก้ Api, Web, Cms ( ไม่ Support responsive )
+> ทั้งหมดประกอบได้ด้วย 3 ส่วน ได้แก้ API, WEB, CMS ( ไม่ Support responsive )
 
 CMS
 * สามารถสร้าง, ลบ, แก้ไข Drink Vending Machine ได้ ( ระบุตำแหน่งของตู้ในแผนที่ได้ )
