@@ -6,6 +6,7 @@ This is testing project for SCG By Charakorn Purithewes. ( James )
 * Docker.
 * MongoDB Compass. ( GUI สำหรับดู Database )
 * Node Js. ( LTS version. )
+* Postman
 
 # Feature
 > ทั้งหมดประกอบได้ด้วย 3 ส่วน ได้แก้ API, WEB, CMS ( ไม่ Support responsive )
