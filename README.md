@@ -22,6 +22,14 @@ CMS
 
 WEB
 * แสดง และค้นหา Drink Vending Machine ที่ต้องการใช้งาน.
-* ซื้อสินค้าใน Drink Vending Machine ที่เลือกใช้งาน และแสดงจำนวนคงเหลือของสินค้า หากสินค้าหมดจะเป็น Sold out.
-* 
+* ค้นหา และซื้อสินค้าใน Drink Vending Machine ที่เลือกใช้งาน 
+* แสดงจำนวนคงเหลือของสินค้า หากสินค้าหมดจะเป็น Sold out.
+
+# Stack
+* React Js ( CMS )
+* Next Js ( WEB )
+* Node Js + Express Js ( API )
+* MongoDB
+* Docker
+* Antd
 
