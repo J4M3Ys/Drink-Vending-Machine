@@ -4,7 +4,9 @@ This is testing project for SCG By Charakorn Purithewes. ( James )
 # Feature
 > ทั้งหมดประกอบได้ด้วย 3 ส่วน ได้แก้ API, WEB, CMS ( ไม่ Support responsive )
 
-<h3>API</h3>
+<h3>API</h3> 
+
+Link : [API Space ( Postman )](https://www.google.com/)
 
 ```bash
 # Docker compose ( MongoDB )
@@ -22,7 +24,7 @@ npm i && npm start
 * Notification สำหรับสินค้าที่น้อยกว่า 10 ชิ้น ( แจ้งเตือนไปทุก Account ที่เป็น Role admin ).
 * Api สำหรับการซื้อสินค้า.
 
-* [API Space ( Postman )](https://www.google.com/)
+
 
 <h3>CMS</h3>
 
