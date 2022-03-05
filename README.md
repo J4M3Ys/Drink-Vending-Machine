@@ -1,6 +1,12 @@
 # Drink Vending Machine
 This is testing project for SCG By Charakorn Purithewes. ( James )
 
+# Environment
+
+* Docker.
+* MongoDB Compass.
+* Node Js. ( LTS version. )
+
 # Feature
 > ทั้งหมดประกอบได้ด้วย 3 ส่วน ได้แก้ API, WEB, CMS ( ไม่ Support responsive )
 
