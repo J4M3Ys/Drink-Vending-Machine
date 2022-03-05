@@ -53,15 +53,22 @@ yarn && yarn start
   <img src="https://user-images.githubusercontent.com/101004644/156894257-f5ae808d-15a7-477d-9838-3c98e0862ab7.png" width="700px;">
 </div>
 
-* สามารถสร้าง, ลบ, แก้ไข, ค้นหา สินค้าใน Drink Vending Machine ที่เราทำการสร้างขึ้นมา.
-<div style="display: flex;">
-  <img src="https://user-images.githubusercontent.com/101004644/156894364-7f69b1db-58a9-41e4-8ede-464255fa911f.png" width="400px;">
+* สามารถสร้าง, ลบ, แก้ไข สินค้าใน Drink Vending Machine ที่เราทำการสร้างขึ้นมา.
+<div style="display: flex; justify-content: center;">
+  <img src="https://user-images.githubusercontent.com/101004644/156894509-e0699fd9-281b-4aca-b031-37950d15acad.png" width="330px;">
+  <img src="https://user-images.githubusercontent.com/101004644/156894364-7f69b1db-58a9-41e4-8ede-464255fa911f.png" width="350px;">
+  <img src="https://user-images.githubusercontent.com/101004644/156894617-8427ec34-8a51-4522-9bca-f3139045f862.png" width="300px;">
 </div>
 
-* สามารถดูตำแหน่งที่ตั้งของ Drink Vending Machine ในแผนที่ได้ว่าตั้งอยู่ที่ใดบ้าง โดยคลิกเลือกที่ตู้ และแผนที่จะทำการ ชี้ไปที่ Location ของตู้บนแผนที่.
-* ระบบ Notification สำหรับสินค้าใดๆ ที่มีจำนวนคงเหลือในตู้ น้อยกว่า 10 ชิ้น. ( แจ้งเตือนไปทุก Account ที่เป็น Role admin )
-
-
+* สามารถดูตำแหน่งที่ตั้งของ Drink Vending Machine ในแผนที่ได้ว่าตั้งอยู่ที่ใดบ้างในหน้า Dashboard โดยคลิกเลือกที่ตู้ และแผนที่จะทำการ ชี้ไปที่ Location ของตู้บนแผนที่.
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/101004644/156894795-2abb369a-d424-4aaf-99c6-d2a6748502e3.png" width="500px;">
+  <img src="https://user-images.githubusercontent.com/101004644/156894796-43568e4d-1378-4a41-8805-dfd0a109f11a.png" width="500px;">
+</div>
+* ระบบ Notification สำหรับสินค้าใดๆ ที่มีจำนวนคงเหลือในตู้ น้อยกว่า 10 ชิ้น ( แจ้งเตือนไปทุก Account ที่เป็น Role admin ) หากทำการคลิกไปที่ Notification ระบบจะทำการนำไปที่ตู้ที่สินค้านั้นแจ้งเตือนมา. 
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/101004644/156894990-084f0c1e-88d4-462b-9f47-745f8a135ddd.png" width="600px;">
+</div>
 
 WEB
 
@@ -70,12 +77,12 @@ WEB
 yarn && yarn run dev
 ```
 
-* แสดง และค้นหา Drink Vending Machine ที่ต้องการใช้งาน.
+* แสดง และค้นหา Drink Vending Machine ที่ต้องการใช้งาน. ( หาก Status ของตู้เป็น InActive จะไม่ทำการแสดงขึ้นมา)
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/101004644/156893353-ff51cdee-7b52-471c-a5b3-9c559c6759a7.png" width="700px;">
 </div>
 
-* ค้นหา และซื้อสินค้าใน Drink Vending Machine ที่เลือกใช้งาน แสดงจำนวนคงเหลือของสินค้า หากสินค้าหมดจะเป็น Sold out.
+* ค้นหา และซื้อสินค้าใน Drink Vending Machine ที่เลือกใช้งาน แสดงจำนวนคงเหลือของสินค้า หากสินค้าหมดจะเป็น Sold out. ( หาก Status ของสินค้าเป็น InActive จะไม่ทำการแสดงขึ้นมา)
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/101004644/156893543-9d360997-d9a2-4b30-b64f-8d740efa6a44.png" width="500px;">
   <img src="https://user-images.githubusercontent.com/101004644/156893606-0e1acfe4-8a12-4e6b-8d74-10948c96493b.png" width="500px;">
