@@ -123,21 +123,25 @@ const ReadNotify = async (req, res) => {
       });
 
     if (!user) {
-      return res.status(400).json({
-        code: 400,
-        status: "Failed.",
-        message: "Can't find notify.",
-      });
+      if (body.id !== "clear") {
+        return res.status(400).json({
+          code: 400,
+          status: "Failed.",
+          message: "Can't find notify.",
+        });
+      }
     }
 
     let temp = await user.notify;
     let unread = [];
 
-    await temp.map((value, index) => {
-      if (index !== body.index) {
-        unread.push(value);
-      }
-    });
+    if (body.index !== null) {
+      await temp.map((value, index) => {
+        if (index !== body.index) {
+          unread.push(value);
+        }
+      });
+    }
 
     user.notify = await unread;
 

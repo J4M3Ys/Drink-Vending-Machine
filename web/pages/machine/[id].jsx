@@ -183,6 +183,7 @@ export default function Index() {
                     hoverable
                     style={{
                       width: 335,
+                      maxHeight: 510,
                       textAlign: "center",
                       borderRadius: 15,
                       padding: 15,
@@ -200,7 +201,19 @@ export default function Index() {
                     <Meta
                       className="custom-ant-meta-description"
                       title={value.product_name}
-                      description={value.product_detail}
+                      description={
+                        <div
+                          style={{
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                          }}
+                        >
+                          {value.product_detail}
+                        </div>
+                      }
                     />
                     <Button
                       disabled={value.product_amount > 0 ? false : true}
@@ -213,7 +226,7 @@ export default function Index() {
                         ? value.product_price + " THB."
                         : "Sold Out"}
                     </Button>
-                    <Detail>Amount : {value.product_amount}</Detail>
+                    <Detail>Stock : {value.product_amount}</Detail>
                   </Card>
                 )
               );

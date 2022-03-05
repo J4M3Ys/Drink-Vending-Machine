@@ -345,6 +345,9 @@ const BuyProduct = (req, res) => {
     }
 
     product.product_amount = (await product.product_amount) - 1;
+    product.product_selled = product.product_selled
+      ? product.product_selled + 1
+      : 1;
     await product
       .save()
       .then(() => {

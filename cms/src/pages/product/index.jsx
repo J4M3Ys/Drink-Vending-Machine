@@ -59,6 +59,12 @@ export default function Index() {
     },
     { title: "Price (THB.)", dataIndex: "product_price", key: "product_price" },
     {
+      title: "Selled",
+      dataIndex: "product_selled",
+      key: "product_selled",
+      render: (value) => (value ? value : 0),
+    },
+    {
       title: "Create At",
       dataIndex: "createdAt",
       key: "createdAt",

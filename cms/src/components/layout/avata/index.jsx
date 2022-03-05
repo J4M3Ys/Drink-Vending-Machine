@@ -9,7 +9,7 @@ import {
   NotifyTitle,
   NotifyDetail,
 } from "./user.style";
-import { NotificationOutlined } from "@ant-design/icons";
+import { NotificationOutlined, UserOutlined } from "@ant-design/icons";
 import { Logout } from "core/util/logout";
 import { ReadNotify, GetUserData } from "core/services/collections/Generic";
 import { read_notify, user } from "core/config/schemas";
@@ -46,8 +46,10 @@ export default function Index() {
     ReadNotify(read_notify, params)
       .then((response) => {
         if (response.code === 200) {
-          setUnread((e) => (e = e - 1));
-          navigate(`/machine/${value.machine_id}/product`);
+          setUnread((e) => (value !== "clear" ? (e = e - 1) : 0));
+          if (value !== "clear") {
+            navigate(`/machine/${value.machine_id}/product`);
+          }
           GetUserData(user).then((response) => {
             if (response.code === 200) {
               setMe(response.data);
@@ -131,6 +133,9 @@ export default function Index() {
             textAlign: "center",
             backgroundColor: "#1DA57A",
           }}
+          onClick={(e) => {
+            readNotify("clear", null);
+          }}
         >
           Clear All
         </Menu.Item>
@@ -149,12 +154,15 @@ export default function Index() {
     <Space size="large" align="baseline">
       <Badge count={unread}>
         <Dropdown overlay={menu} placement="bottomLeft" arrow>
-          <NotificationOutlined style={{ fontSize: 20 }} />
+          <NotificationOutlined style={{ fontSize: 20, cursor: "pointer" }} />
         </Dropdown>
       </Badge>
-
       <Dropdown overlay={avata} placement="bottomLeft" arrow>
-        <Avatar shape="square" size="large" />
+        <Space style={{ cursor: "pointer", height: 40 }}>
+          <Avatar size="large" icon={<UserOutlined />} />
+          {me?.first_name}
+          {me?.last_name}
+        </Space>
       </Dropdown>
     </Space>
   );
