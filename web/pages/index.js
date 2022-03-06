@@ -143,11 +143,13 @@ export default function Home() {
                     cover={
                       <Image
                         width={300}
-                        height={300}
                         preview={false}
                         alt="machine"
                         src={machine.machine_image}
-                        style={{ padding: 20 }}
+                        style={{
+                          padding: 20,
+                          height: "fit-content",
+                        }}
                       />
                     }
                   >

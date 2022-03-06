@@ -82,3 +82,6 @@
 
 #db
 /api/volumes
+
+#upload
+/api/uploads/images

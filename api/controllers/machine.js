@@ -1,4 +1,6 @@
 const Machine = require("../models/machine");
+const Product = require("../models/product");
+
 const { check, validationResult } = require("express-validator");
 
 const Create = async (req, res) => {
@@ -218,12 +220,21 @@ const Delete = (req, res) => {
           message: "Machine not found.",
         });
 
-      console.log(`(Service) Machine deleted (ID: ${machine._id}).`);
-      return res.status(200).json({
-        code: 200,
-        status: "Success.",
-        data: null,
-        message: "Machine has deleted success.",
+      Product.deleteMany({ machine_id: req.params.id }, (err, product) => {
+        if (err)
+          return res.status(400).json({
+            code: 400,
+            status: "Failed.",
+            message: "Delete failed.",
+          });
+
+        console.log(`(Service) Machine deleted (ID: ${machine._id}).`);
+        return res.status(200).json({
+          code: 200,
+          status: "Success.",
+          data: null,
+          message: "Machine has deleted success.",
+        });
       });
     }
   );

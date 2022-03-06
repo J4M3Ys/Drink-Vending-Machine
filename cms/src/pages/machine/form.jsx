@@ -273,7 +273,7 @@ export default function Index() {
         <FormItem>
           <Space>
             <Button type="primary" htmlType="submit">
-              Create
+              {siteParams?.id ? "Update" : "Create"}
             </Button>
             <Button type="button" onClick={(e) => handleReset(e)}>
               Reset

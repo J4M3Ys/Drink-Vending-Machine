@@ -60,6 +60,58 @@ const Create = async (req, res) => {
   });
 };
 
+const Update = async (req, res) => {
+  const body = req.body;
+
+  await check("password").notEmpty().run(req);
+  await check("first_name").notEmpty().run(req);
+  await check("last_name").notEmpty().run(req);
+  await check("role").notEmpty().run(req);
+  await check("status").notEmpty().run(req);
+
+  const result = await validationResult(req);
+
+  if (!result.isEmpty()) {
+    return res.status(400).json({
+      code: 400,
+      errors: result.array(),
+    });
+  }
+
+  User.findOne({ email: body.email }, async (err, result) => {
+    if (err)
+      return res.status(400).json({
+        code: 400,
+        status: "Failed.",
+        message: "Error.",
+      });
+
+    result.password = await body.password;
+    result.role = await body.role;
+    result.first_name = await body.first_name;
+    result.last_name = await body.last_name;
+    result.status = await body.status;
+
+    await result
+      .save()
+      .then(() => {
+        console.log(`(Service) User updated (ID: ${result._id}).`);
+        return res.status(201).json({
+          code: 201,
+          status: "Success.",
+          message: "User is updated.",
+        });
+      })
+      .catch(() => {
+        return res.status(400).json({
+          code: 400,
+          status: "Failed.",
+          message: "Error please try again.",
+        });
+      });
+  });
+};
+
 const GetUser = (req, res) => {
   User.findOne({ email: req.user.email }, (err, user) => {
     if (err)
@@ -114,6 +166,21 @@ const Login = async (req, res) => {
 
 const ReadNotify = async (req, res) => {
   const body = req.body;
+
+  await check("id").notEmpty().run(req);
+
+  if (body.id.toLowerCase() !== "clear")
+    await check("index").notEmpty().run(req);
+
+  const result = await validationResult(req);
+
+  if (!result.isEmpty()) {
+    return res.status(400).json({
+      code: 400,
+      errors: result.array(),
+    });
+  }
+
   User.findOne({ _id: body.id }, async (err, user) => {
     if (err)
       return res.status(400).json({
@@ -123,7 +190,7 @@ const ReadNotify = async (req, res) => {
       });
 
     if (!user) {
-      if (body.id !== "clear") {
+      if (body.id.toLowerCase() !== "clear") {
         return res.status(400).json({
           code: 400,
           status: "Failed.",
@@ -169,4 +236,5 @@ module.exports = {
   GetUser,
   Login,
   ReadNotify,
+  Update,
 };

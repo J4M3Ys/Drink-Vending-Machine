@@ -40,7 +40,7 @@ export default function Index() {
 
   function readNotify(value, index) {
     const params = {
-      id: me._id,
+      id: value === "clear" ? value : me._id,
       index: index,
     };
     ReadNotify(read_notify, params)
@@ -133,7 +133,7 @@ export default function Index() {
             textAlign: "center",
             backgroundColor: "#1DA57A",
           }}
-          onClick={(e) => {
+          onClick={() => {
             readNotify("clear", null);
           }}
         >

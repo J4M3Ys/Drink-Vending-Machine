@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.put("/login", User.Login);
 router.post("/user", User.Create);
-
+router.put("/user/:id", User.Update);
 router.get("/user", authenticateToken, User.GetUser);
 router.put("/read-notify", authenticateToken, User.ReadNotify);
 
