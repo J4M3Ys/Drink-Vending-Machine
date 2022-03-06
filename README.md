@@ -13,7 +13,7 @@ This is testing project for SCG By Charakorn Purithewes. ( James )
 
 <h3>API</h3> 
 
-Link : [API Space ( Postman )](https://www.google.com/)
+Link : [API Space ( Postman JSON Link )](https://www.getpostman.com/collections/9417d25b455159f09d35)
 
 ```bash
 # Docker compose ( MongoDB )
